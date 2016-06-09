@@ -458,91 +458,90 @@
 		PORTFOLIO
 		=============================================== -->
 		
-		<?$APPLICATION->IncludeComponent("bitrix:catalog.section", "portfolio", array(
-			"IBLOCK_TYPE" => "catalog",
-			"IBLOCK_ID" => "5",
-			"SECTION_ID" => "",
-			"SECTION_CODE" => "",
-			"SECTION_USER_FIELDS" => array(
-				0 => "",
-				1 => "",
-			),
-			"ELEMENT_SORT_FIELD" => "sort",
-			"ELEMENT_SORT_ORDER" => "asc",
-			"ELEMENT_SORT_FIELD2" => "id",
-			"ELEMENT_SORT_ORDER2" => "desc",
-			"FILTER_NAME" => "arrFilter",
-			"INCLUDE_SUBSECTIONS" => "A",
-			"SHOW_ALL_WO_SECTION" => "Y",
-			"PAGE_ELEMENT_COUNT" => "6",
-			"LINE_ELEMENT_COUNT" => "1",
-			"PROPERTY_CODE" => array(
-				0 => "LINK_WEBSITE",
-				1 => "",
-				2 => "",
-				3 => "",
-				4 => "",
-				5 => "",
-				6 => "",
-			),
-			"OFFERS_LIMIT" => "5",
-			"TEMPLATE_THEME" => "blue",
-			"ADD_PICT_PROP" => "-",
-			"LABEL_PROP" => "-",
-			"MESS_BTN_BUY" => "Купить",
-			"MESS_BTN_ADD_TO_BASKET" => "В корзину",
-			"MESS_BTN_SUBSCRIBE" => "Подписаться",
-			"MESS_BTN_DETAIL" => "Подробнее",
-			"MESS_NOT_AVAILABLE" => "Нет в наличии",
-			"SECTION_URL" => "",
-			"DETAIL_URL" => "",
-			"SECTION_ID_VARIABLE" => "SECTION_ID",
-			"AJAX_MODE" => "N",
-			"AJAX_OPTION_JUMP" => "N",
-			"AJAX_OPTION_STYLE" => "N",
-			"AJAX_OPTION_HISTORY" => "N",
-			"CACHE_TYPE" => "A",
-			"CACHE_TIME" => "36000000",
-			"CACHE_GROUPS" => "Y",
-			"SET_META_KEYWORDS" => "N",
-			"META_KEYWORDS" => "-",
-			"SET_META_DESCRIPTION" => "N",
-			"META_DESCRIPTION" => "-",
-			"BROWSER_TITLE" => "-",
-			"ADD_SECTIONS_CHAIN" => "N",
-			"DISPLAY_COMPARE" => "N",
-			"SET_TITLE" => "N",
-			"SET_STATUS_404" => "N",
-			"CACHE_FILTER" => "N",
-			"PRICE_CODE" => array(
-			),
-			"USE_PRICE_COUNT" => "N",
-			"SHOW_PRICE_COUNT" => "1",
-			"PRICE_VAT_INCLUDE" => "N",
-			"BASKET_URL" => "/personal/basket.php",
-			"ACTION_VARIABLE" => "action",
-			"PRODUCT_ID_VARIABLE" => "id",
-			"USE_PRODUCT_QUANTITY" => "N",
-			"ADD_PROPERTIES_TO_BASKET" => "N",
-			"PAGER_TEMPLATE" => ".default",
-			"DISPLAY_TOP_PAGER" => "N",
-			"DISPLAY_BOTTOM_PAGER" => "N",
-			"PAGER_TITLE" => "Товары",
-			"PAGER_SHOW_ALWAYS" => "N",
-			"PAGER_DESC_NUMBERING" => "N",
-			"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-			"PAGER_SHOW_ALL" => "N",
-			"AJAX_OPTION_ADDITIONAL" => "",
-			"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-			"PRODUCT_PROPS_VARIABLE" => "prop",
-			"PARTIAL_PRODUCT_PROPERTIES" => "N",
-			"PRODUCT_PROPERTIES" => array(
-			)
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:catalog.section",
+			"portfolio",
+			array(
+				"IBLOCK_TYPE" => "catalog",
+				"IBLOCK_ID" => "5",
+				"SECTION_ID" => "",
+				"SECTION_CODE" => "",
+				"SECTION_USER_FIELDS" => array(
+					0 => "",
+					1 => "",
+				),
+				"ELEMENT_SORT_FIELD" => "sort",
+				"ELEMENT_SORT_ORDER" => "asc",
+				"FILTER_NAME" => "arrFilter",
+				"INCLUDE_SUBSECTIONS" => "A",
+				"SHOW_ALL_WO_SECTION" => "Y",
+				"PAGE_ELEMENT_COUNT" => "6",
+				"LINE_ELEMENT_COUNT" => "1",
+				"PROPERTY_CODE" => array(
+					0 => "LINK_WEBSITE",
+					1 => "",
+					2 => "",
+					3 => "",
+					4 => "",
+					5 => "",
+					6 => "",
+				),
+				"OFFERS_LIMIT" => "5",
+				"TEMPLATE_THEME" => "blue",
+				"ADD_PICT_PROP" => "-",
+				"LABEL_PROP" => "-",
+				"MESS_BTN_BUY" => "Купить",
+				"MESS_BTN_ADD_TO_BASKET" => "В корзину",
+				"MESS_BTN_SUBSCRIBE" => "Подписаться",
+				"MESS_BTN_DETAIL" => "Подробнее",
+				"MESS_NOT_AVAILABLE" => "Нет в наличии",
+				"SECTION_URL" => "",
+				"DETAIL_URL" => "",
+				"SECTION_ID_VARIABLE" => "SECTION_ID",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "N",
+				"AJAX_OPTION_HISTORY" => "N",
+				"CACHE_TYPE" => "A",
+				"CACHE_TIME" => "36000000",
+				"CACHE_GROUPS" => "Y",
+				"SET_META_KEYWORDS" => "N",
+				"META_KEYWORDS" => "-",
+				"SET_META_DESCRIPTION" => "N",
+				"META_DESCRIPTION" => "-",
+				"BROWSER_TITLE" => "-",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"DISPLAY_COMPARE" => "N",
+				"SET_TITLE" => "N",
+				"SET_STATUS_404" => "N",
+				"CACHE_FILTER" => "N",
+				"PRICE_CODE" => array(
+				),
+				"USE_PRICE_COUNT" => "N",
+				"SHOW_PRICE_COUNT" => "1",
+				"PRICE_VAT_INCLUDE" => "N",
+				"BASKET_URL" => "/personal/basket.php",
+				"ACTION_VARIABLE" => "action",
+				"PRODUCT_ID_VARIABLE" => "id",
+				"USE_PRODUCT_QUANTITY" => "N",
+				"ADD_PROPERTIES_TO_BASKET" => "N",
+				"PAGER_TEMPLATE" => ".default",
+				"DISPLAY_TOP_PAGER" => "N",
+				"DISPLAY_BOTTOM_PAGER" => "N",
+				"PAGER_TITLE" => "Товары",
+				"PAGER_SHOW_ALWAYS" => "N",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "N",
+				"AJAX_OPTION_ADDITIONAL" => "",
+				"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+				"PRODUCT_PROPS_VARIABLE" => "prop",
+				"PARTIAL_PRODUCT_PROPERTIES" => "N",
+				"PRODUCT_PROPERTIES" => array()
 			),
 			array('HIDE_ICONS' => 'Y'),
 			false
 		);?>
-		
 		
 		<!-- ==============================================
 		RESPONSIVE VIDEO
@@ -651,7 +650,6 @@
 			array('HIDE_ICONS' => 'Y'),
 			false
 		);?>
-
 		
 		<!-- ==============================================
 		CALL TO ACTION
@@ -757,24 +755,24 @@
 				"ACTIVE_COMPONENT" => "N"
 			)
 		);?>
-		
-		
 		<?
 		$strEmail = COption::GetOptionString('main','email_from');
-		$APPLICATION->IncludeComponent("bitrix:main.feedback", "contacts", array(
-			"USE_CAPTCHA" => "N",
-			"OK_TEXT" => "Все получилось, ваше сообщение доставленно!",
-			"EMAIL_TO" => $strEmail,
-			"REQUIRED_FIELDS" => array(
-				0 => "NONE",
-			),
-			"AJAX_MODE" => "Y",  // режим AJAX
-			"AJAX_OPTION_SHADOW" => "Y", 
-			"AJAX_OPTION_JUMP" => "N",
-			"AJAX_OPTION_STYLE" => "Y", 
-			"AJAX_OPTION_HISTORY" => "N",
-			"EVENT_MESSAGE_ID" => array(
-			)
+		$APPLICATION->IncludeComponent(
+			"bitrix:main.feedback",
+			"contacts",
+			array(
+				"USE_CAPTCHA" => "N",
+				"OK_TEXT" => "Все получилось, ваше сообщение доставленно!",
+				"EMAIL_TO" => $strEmail,
+				"REQUIRED_FIELDS" => array(
+					0 => "NONE",
+				),
+				"AJAX_MODE" => "Y",  // режим AJAX
+				"AJAX_OPTION_SHADOW" => "Y",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "Y",
+				"AJAX_OPTION_HISTORY" => "N",
+				"EVENT_MESSAGE_ID" => array()
 			),
 			false
 		);?>
