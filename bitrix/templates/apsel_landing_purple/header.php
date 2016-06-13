@@ -72,7 +72,16 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	</head>
   
 	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
-
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:main.include",
+			"",
+			Array(
+				"AREA_FILE_SHOW" => "file",
+				"AREA_FILE_SUFFIX" => "inc",
+				"EDIT_TEMPLATE" => "",
+				"PATH" => SITE_DIR."include/yandex_metrika.php"
+			)
+		);?>
 		<!-- ==============================================
 		MAIN NAV
 		=============================================== -->
