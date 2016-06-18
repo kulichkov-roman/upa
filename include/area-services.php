@@ -37,7 +37,7 @@
 					)
 				);?>
 						
-				<a class="btn btn-qubico white scrollto" href="#services_s1"><i class="fa fa-arrow-down"></i>Чем наполнить?</a>
+				<a class="btn btn-qubico white scrollto" href="#contact"><i class="fa fa-arrow-down"></i>Оставить заявку</a>
 						
 			</div>
 				

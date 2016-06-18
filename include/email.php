@@ -1,1 +1,1 @@
-<a href='mailto:example@mail.ru'>example@mail.ru</a>
+<a href='mailto:sale@agency-up.ru'>sale@agency-up.ru</a>

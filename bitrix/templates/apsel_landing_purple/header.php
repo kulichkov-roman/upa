@@ -99,7 +99,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					
 					<!-- ======= LOGO ========-->
 					<a class="navbar-brand scrollto" href="#home">
-						<span class="logo-small"><img src="<?=SITE_TEMPLATE_PATH?>/assets/logo-small.png" alt=""/></span>
+						<span class="logo-small"><img src="/include/up-logo1.png" alt=""/></span>
 						<span class="to-top"><i class="fa fa-arrow-up"></i></span>
 						
 						<!-- ==== Image Logo ==== -->

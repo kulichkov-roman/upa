@@ -19,7 +19,7 @@
 	
 			</div>
 			<div class="col-md-4 cta-button">
-				<p class="text-center"><a class="btn btn-qubico scrollto" href="#features_s1"><i class="fa fa-arrow-down"></i>Узнать подробнее</a></p>
+				<p class="text-center"><a class="btn btn-qubico scrollto" href="#features_s1"><i class="fa fa-arrow-down"></i>Наши возможности</a></p>
 			</div>
 		</div><!--End row-->
 		

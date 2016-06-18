@@ -539,7 +539,6 @@
 				"PARTIAL_PRODUCT_PROPERTIES" => "N",
 				"PRODUCT_PROPERTIES" => array()
 			),
-			array('HIDE_ICONS' => 'Y'),
 			false
 		);?>
 		
