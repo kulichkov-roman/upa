@@ -6,21 +6,10 @@
 		
 			<div class="col-sm-6">
 			
-				<div class="iphones-wrapper scrollimation">
-				
-					<div class="iphone-portrait-frame">
-						<img class="img-responsive" src="<?=SITE_TEMPLATE_PATH?>/assets/iphone-portrait.png" alt=""/>
-						<div class="iphone-portrait-screen">
-							<img class="img-responsive" src="<?=SITE_TEMPLATE_PATH?>/assets/iphone-portrait-screen-2.jpg" alt=""/>
-						</div>
-					</div>
-							
-					<div class="iphone-landscape-frame">
-						<img class="img-responsive" src="<?=SITE_TEMPLATE_PATH?>/assets/iphone-landscape.png" alt=""/>
-						<div class="iphone-landscape-screen">
-							<img class="img-responsive" src="<?=SITE_TEMPLATE_PATH?>/assets/iphone-landscape-screen-2.jpg" alt=""/>
-						</div>
-					</div>
+				<div class="iphones-wrapper">
+
+					<img class="img-responsive" src="<?=SITE_TEMPLATE_PATH?>/assets/seo_sale.png" alt=""/>
+
 				</div>
 						
 			</div>
