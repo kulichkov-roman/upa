@@ -9,6 +9,6 @@
         <h2>Новосибирск</h2>
         <p>ул. Крылова, д. 36, оф. 521б</p>
         <a href="mailto:sale@agency-up.ru">sale@agency-up.ru</a>
-        <p>+7 (383) 312-02-96</p>
+        <p>+7 (905) 939-66-33</p>
     </div>
 </div>
