@@ -67,8 +67,16 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<![endif]-->
 		
 		<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/libs/modernizr.min.js"></script>
-		
-		
+
+        <!-- ==============================================
+        Open graph
+        =============================================== -->
+
+        <meta property="og:image:width" content="300"/>
+        <meta property="og:image:height" content="300"/>
+        <meta property="og:url" content="http://agency-up.ru/assets/logo_share.png"/>
+        <meta property="og:title" content="Создание сайтов в Москве, Новосибирске: заказать разработку сайта, программирование на 1С-Битрикс, сложные интернет-магазины"/>
+        <meta property="og:description" content="Up Agency предлагает полный комплекс услуг по созданию и продвижению веб сайтов"/>
 	</head>
   
 	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
