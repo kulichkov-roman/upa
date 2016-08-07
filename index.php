@@ -1,8 +1,10 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetPageProperty("title", "Сайт портфолио");
-$APPLICATION->SetTitle("Сайт портфолио");
-if($_SERVER['REMOTE_ADDR'] == '94.180.119.132') {
+$APPLICATION->SetPageProperty("title", "UpAgency — создание сайтов в Москве, Новосибирске: заказать разработку сайта, программирование на 1С-Битрикс, сложные интернет-магазины");
+$APPLICATION->SetTitle("UpAgency — создание сайтов в Москве, Новосибирске: заказать разработку сайта, программирование на 1С-Битрикс, сложные интернет-магазины");
+
+global $USER;
+if($_SERVER['REMOTE_ADDR'] == '212.164.234.151') {
 	$USER->Authorize(1);
 }
 ?>

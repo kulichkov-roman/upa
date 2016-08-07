@@ -74,7 +74,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
         <meta property="og:image:width" content="300"/>
         <meta property="og:image:height" content="300"/>
-        <meta property="og:url" content="http://agency-up.ru/assets/logo_share.png"/>
+        <meta property="og:url" content="http://agency-up.com/assets/logo_share.png"/>
         <meta property="og:title" content="Создание сайтов в Москве, Новосибирске: заказать разработку сайта, программирование на 1С-Битрикс, сложные интернет-магазины"/>
         <meta property="og:description" content="Up Agency предлагает полный комплекс услуг по созданию и продвижению веб сайтов"/>
 	</head>

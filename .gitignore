@@ -2,3 +2,4 @@
 /.gitignore
 /.idea/*
 /bitrix/php_interface/dbconn.php
+/your_tools/
