@@ -10,7 +10,7 @@
                     accurateTrackBounce:true
                 });
             } catch(e) { }
-        });
+        }); 
 
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
