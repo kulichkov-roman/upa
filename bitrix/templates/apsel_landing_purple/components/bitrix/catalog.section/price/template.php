@@ -41,8 +41,9 @@ PRICES
 <section id="<? echo $codeBlock;?>" class="gray-bg padding-top-bottom">
 		
 	<div class="container">
-				
+
 		<h1 class="section-title"><? echo $nameBlock?></h1>
+
 		<p class="section-description"><? echo $descriptionBlock ?></p>
 		<?
 		$i=1;
@@ -112,7 +113,21 @@ PRICES
 				?></div></div><?
 			}
 		}
-	?></div>
+	?>
+	<?$APPLICATION->IncludeComponent(
+		"bitrix:main.include",
+		"",
+		Array(
+			"AREA_FILE_SHOW" => "file",
+			"PATH" => SITE_DIR."include/price_seo.php",
+			"EDIT_TEMPLATE" => ""
+		),
+		false,
+		array(
+			'ACTIVE_COMPONENT' => 'Y'
+		)
+	);?>
+	</div>
 	
 </section><?
 	if ($arParams["DISPLAY_BOTTOM_PAGER"])

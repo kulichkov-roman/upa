@@ -44,7 +44,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/colorbox.css" />
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/qubico.css">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/colors.css">
-		<link rel="stylesheet" href="/css/dev.css">
+		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/fancybox/source/jquery.fancybox.css">
+		<link rel="stylesheet" href="/css/developers.css">
 		
 		<link id="theme" rel="stylesheet">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/style-switcher.css">
@@ -71,12 +72,12 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
         <!-- ==============================================
         Open graph
         =============================================== -->
-
         <meta property="og:image:width" content="300"/>
         <meta property="og:image:height" content="300"/>
-        <meta property="og:url" content="http://agency-up.com/assets/logo_share.png"/>
-        <meta property="og:title" content="Создание сайтов в Москве, Новосибирске: заказать разработку сайта, программирование на 1С-Битрикс, сложные интернет-магазины"/>
-        <meta property="og:description" content="Up Agency предлагает полный комплекс услуг по созданию и продвижению веб сайтов"/>
+        <meta property="og:url" content="http://soft-engineering.pro"/>
+        <meta property="og:image" content="http://soft-engineering.pro//assets/logo_share.jpg"/>
+        <meta property="og:title" content="Создание сайтов, web-приложение в Москве, Новосибирске: заказать разработку сайта, программирование на 1С-Битрикс, сложные интернет-магазины"/>
+        <meta property="og:description" content="Engineering.PRO предлагает полный комплекс услуг по созданию и продвижению сайтов, веб-приложений"/>
 	</head>
   
 	<body data-spy="scroll" data-target="#main-nav" data-offset="400">

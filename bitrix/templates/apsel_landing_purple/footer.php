@@ -43,7 +43,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					"ACTIVE_COMPONENT" => "N"
 					)
 				);?>
-				<p>&copy; Copyright <? echo date('Y') ?> 
+				<p>&copy; ООО «Инженерия» <? echo date('Y') ?>.
 					<?$APPLICATION->IncludeFile(
 						SITE_DIR."include/copyright.php",
 						Array(),
@@ -58,8 +58,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<!-- ==============================================
 		SCRIPTS
 		=============================================== -->	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js">\x3C/script>')</script>
+		<script src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="http://yandex.st/jquery/1.9.1/jquery.min.js">\x3C/script>')</script>
 		
 		<script src="<?=SITE_TEMPLATE_PATH?>/js/libs/bootstrap.min.js"></script>
 		<script src='<?=SITE_TEMPLATE_PATH?>/js/jquery.easing.1.3.min.js'></script>
@@ -75,6 +75,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<script src="<?=SITE_TEMPLATE_PATH?>/js/contact.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH?>/js/qubico.js"></script>
 		<script src="<?=SITE_TEMPLATE_PATH?>/js/style-switcher.js"></script>
+		<script src="<?=SITE_TEMPLATE_PATH?>/js/developers.js"></script>
 		
 		<script src='https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit' async defer></script>
 		
