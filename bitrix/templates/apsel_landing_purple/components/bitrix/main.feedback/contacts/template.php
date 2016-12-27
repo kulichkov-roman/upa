@@ -16,8 +16,39 @@ CONTACT
 =============================================== -->
 <section id="contact" class="gray-bg padding-top-bottom">
 	<div class="container">
-		<h1 class="section-title"><? echo GetMessage('FORM_HEADER')?></h1>
-		<p class="section-description"><? echo GetMessage('FORM_SLOGAN')?></p>
+		<?
+		$isHoney = CSite::InDir(SITE_DIR.'honey/');
+		if($isHoney)
+		{
+			$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => SITE_DIR."include/honey/contacts-title.php",
+					"EDIT_TEMPLATE" => ""
+				),
+				false
+			);
+			$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => SITE_DIR."include/honey/contacts-slogan.php",
+					"EDIT_TEMPLATE" => ""
+				),
+				false
+			);
+		}
+		else
+		{
+			?>
+			<h1 class="section-title"><? echo GetMessage('FORM_HEADER')?></h1>
+			<p class="section-description"><? echo GetMessage('FORM_SLOGAN')?></p>
+			<?
+		}
+		?>
 		<div class="row">
 			<?
 			$APPLICATION->IncludeComponent(

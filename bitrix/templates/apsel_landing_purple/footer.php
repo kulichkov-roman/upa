@@ -4,17 +4,39 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	IncludeTemplateLangFile(__FILE__);
 ?>
 
-		<?$APPLICATION->IncludeComponent(
-			"bitrix:main.include",
-			"",
-			Array(
-				"AREA_FILE_SHOW" => "file",
-				"PATH" => SITE_DIR."include/main.php",
-				"EDIT_TEMPLATE" => ""
-			),
-			false,
-			array('HIDE_ICONS' => 'Y')
-		);	
+		<?
+		$isHoney = CSite::InDir(SITE_DIR.'honey/');
+
+		if($isHoney)
+		{
+			$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => SITE_DIR."include/honey/main.php",
+					"EDIT_TEMPLATE" => ""
+				),
+				false,
+				array('HIDE_ICONS' => 'Y')
+			);
+		}
+		else
+		{
+			$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => SITE_DIR."include/main.php",
+					"EDIT_TEMPLATE" => ""
+				),
+				false,
+				array('HIDE_ICONS' => 'Y')
+			);
+		}
+
+
 		?>
 		
 		<!-- ==============================================

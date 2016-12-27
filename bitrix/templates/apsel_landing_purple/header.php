@@ -23,6 +23,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 			$APPLICATION->ShowHeadStrings();
 			$APPLICATION->ShowHeadScripts();
 		?>
+		<?$isHoney = CSite::InDir(SITE_DIR.'honey/');?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -41,9 +42,16 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/font-awesome.css">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/flexslider.css">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/sequencejs-qubico.css" />
+
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/colorbox.css" />
+
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/qubico.css">
-		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/colors.css">
+		<?if($isHoney){?>
+			<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/honey/colors.css">
+		<?} else {?>
+			<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/colors.css">
+		<?}?>
+
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/fancybox/source/jquery.fancybox.css">
 		<link rel="stylesheet" href="/css/developers.css">
 		
@@ -95,48 +103,81 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		MAIN NAV
 		=============================================== -->
 		<div id="main-nav" class="navbar navbar-fixed-top">
-				<div id="panel">
-			<?$APPLICATION->ShowPanel();?>
-		</div>
+			<div id="panel">
+				<?$APPLICATION->ShowPanel();?>
+			</div>
 			<div class="container">
-			
 				<div class="navbar-header">
-				
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
 						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
-					
 					<!-- ======= LOGO ========-->
 					<a class="navbar-brand scrollto" href="#home">
 						<span class="logo-small"><img src="/include/up-logo1.png" alt=""/></span>
 						<span class="to-top"><i class="fa fa-arrow-up"></i></span>
-						
 						<!-- ==== Image Logo ==== -->
 						<span>
-						<?$APPLICATION->IncludeComponent(
-							"bitrix:main.include",
-							"",
-							Array(
-								"AREA_FILE_SHOW" => "file",
-								"AREA_FILE_SUFFIX" => "inc",
-								"EDIT_TEMPLATE" => "",
-								"PATH" => SITE_DIR."include/company_logo.php"
-							)
-						);?>
+						<?
+						if($isHoney)
+						{
+							$APPLICATION->IncludeComponent(
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"AREA_FILE_SUFFIX" => "inc",
+									"EDIT_TEMPLATE" => "",
+									"PATH" => SITE_DIR."include/honey/company_logo.php"
+								)
+							);
+						}
+						else
+						{
+							$APPLICATION->IncludeComponent(
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"AREA_FILE_SUFFIX" => "inc",
+									"EDIT_TEMPLATE" => "",
+									"PATH" => SITE_DIR."include/company_logo.php"
+								)
+							);
+						}
+						?>
 						</span>
 					</a>
-					
 				</div>
-				
-				<?$APPLICATION->IncludeComponent("bitrix:catalog.main", "menu", Array(
-					"IBLOCK_TYPE" => "catalog",
-					"IBLOCK_URL" => "",
-					"CACHE_TYPE" => "A",
-					"CACHE_TIME" => "36000000",	
-					"CACHE_GROUPS" => "Y",
-					),
-					false
-				);?>
+				<?
+				if($isHoney)
+				{
+					$APPLICATION->IncludeComponent(
+						"bitrix:main.include",
+						"",
+						Array(
+							"AREA_FILE_SHOW" => "file",
+							"AREA_FILE_SUFFIX" => "inc",
+							"EDIT_TEMPLATE" => "",
+							"PATH" => SITE_DIR."include/honey/menu.php"
+						)
+					);
+				}
+				else
+				{
+					$APPLICATION->IncludeComponent(
+						"bitrix:catalog.main",
+						"menu",
+						Array(
+							"IBLOCK_TYPE" => "catalog",
+							"IBLOCK_URL" => "",
+							"CACHE_TYPE" => "A",
+							"CACHE_TIME" => "36000000",
+							"CACHE_GROUPS" => "Y",
+						),
+						false
+					);
+				}
+				?>
 				
 			</div><!--End container -->
 			
