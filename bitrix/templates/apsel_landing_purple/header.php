@@ -11,19 +11,25 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		Title and Meta Tags
 		=============================================== -->
 		<meta http-equiv="Content-Type" content="text/html; charset=<?echo LANG_CHARSET?>">
+		<?$isHoney = CSite::InDir(SITE_DIR.'honey/');?>
 		<?
 			$APPLICATION->ShowHead();
 			$APPLICATION->ShowMeta("robots");
 			$APPLICATION->ShowMeta("keywords");
 			$APPLICATION->ShowMeta("description");
 		?>
-		<title><?$APPLICATION->ShowTitle();?></title>
+		<title>
+			<?if($isHoney){?>
+				Engineering.PRO — создаём лендинги по продаже мёда
+			<?} else {
+				$APPLICATION->ShowTitle();
+			}?>
+		</title>
 		<?
 			$APPLICATION->ShowCSS();
 			$APPLICATION->ShowHeadStrings();
 			$APPLICATION->ShowHeadScripts();
 		?>
-		<?$isHoney = CSite::InDir(SITE_DIR.'honey/');?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
