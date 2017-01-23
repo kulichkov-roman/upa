@@ -1,4 +1,4 @@
-<section class="gray-bg cta">
+<section class="white-bg cta">
 		
 	<div class="container">
 			

@@ -84,8 +84,7 @@
 		
 		<!-- ==============================================
 		CALL TO ACTION
-		=============================================== -->	
-	
+		=============================================== -->
 		<?$APPLICATION->IncludeComponent(
 			"bitrix:main.include",
 			"",
@@ -98,8 +97,28 @@
 			array(
 				'HIDE_ICONS' => 'Y',
 			)
-		);?>		
-	
+		);?>
+		<?
+		$strEmail = COption::GetOptionString('main','email_from');
+		$APPLICATION->IncludeComponent(
+			"bitrix:main.feedback",
+			"contacts_audit",
+			array(
+				"USE_CAPTCHA" => "N",
+				"OK_TEXT" => "Все получилось, ваше сообщение доставленно!",
+				"EMAIL_TO" => $strEmail,
+				"REQUIRED_FIELDS" => array(
+					0 => "NONE",
+				),
+				"AJAX_MODE" => "Y",  // режим AJAX
+				"AJAX_OPTION_SHADOW" => "Y",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "Y",
+				"AJAX_OPTION_HISTORY" => "N",
+				"EVENT_MESSAGE_ID" => array()
+			),
+			false
+		);?>
 
 		<?$APPLICATION->IncludeComponent(
 			"bitrix:catalog.section",

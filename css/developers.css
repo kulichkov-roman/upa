@@ -7,3 +7,17 @@
 {
 	padding-top: 55px!important;
 }
+
+.col-centered{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.audit {
+	padding-top: 40px;
+	padding-right: 65px;
+}
+
+.section-description {
+	line-height: inherit;
+}

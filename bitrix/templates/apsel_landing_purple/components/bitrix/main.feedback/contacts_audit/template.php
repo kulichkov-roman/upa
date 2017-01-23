@@ -14,7 +14,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 <!-- ==============================================
 CONTACT
 =============================================== -->
-<section id="contact" class="gray-bg padding-top-bottom">
+<section id="contact-audit" class="gray-bg padding-top-bottom">
 	<div class="container">
 		<?
 		$isHoney = CSite::InDir(SITE_DIR.'honey/');
@@ -44,8 +44,7 @@ CONTACT
 		else
 		{
 			?>
-			<h1 class="section-title">Оставайтесь на связи</h1>
-			<p class="section-description"><? echo GetMessage('FORM_SLOGAN')?></p>
+			<h1 class="section-title">Оставьте заявку на аудит</h1>
 			<?
 		}
 		?>
@@ -56,7 +55,7 @@ CONTACT
 				"",
 				Array(
 					"AREA_FILE_SHOW" => "file",
-					"PATH" => SITE_DIR."include/contacts.php",
+					"PATH" => SITE_DIR."include/audit.php",
 					"EDIT_TEMPLATE" => ""
 				),
 				false
