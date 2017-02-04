@@ -1,4 +1,4 @@
-<div class="col-sm-6">
+<div class="col-sm-6"> 
     <div class="audit">
         <h3 class="col-centered">1.	На рекламную кампанию:</h3>
         <p class="section-description">
