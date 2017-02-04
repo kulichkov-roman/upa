@@ -1,5 +1,5 @@
 <div class="col-sm-6">
-    <div class="audit"> 
+    <div class="audit">  
         <h3 class="col-centered">1.	На рекламную кампанию:</h3>
         <p class="section-description">
             Мы проанализируем Ваших потребителей и запустим наиболее оптимальную рекламную компанию в Интернете.
