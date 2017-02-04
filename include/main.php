@@ -120,7 +120,80 @@
 			false
 		);?>
 
-
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:catalog.section",
+			"features",
+			Array(
+				"IBLOCK_TYPE" => "catalog",
+				"IBLOCK_ID" => "2",
+				"SECTION_ID" => "",
+				"SECTION_CODE" => "",
+				"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+				"ELEMENT_SORT_FIELD" => "sort",
+				"ELEMENT_SORT_ORDER" => "asc",
+				"ELEMENT_SORT_FIELD2" => "id",
+				"ELEMENT_SORT_ORDER2" => "desc",
+				"FILTER_NAME" => "arrFilter",
+				"INCLUDE_SUBSECTIONS" => "A",
+				"SHOW_ALL_WO_SECTION" => "Y",
+				"PAGE_ELEMENT_COUNT" => "6",
+				"LINE_ELEMENT_COUNT" => "3",
+				"PROPERTY_CODE" => array(0=>"ICON_1",1=>"ICON_2",2=>"",),
+				"OFFERS_LIMIT" => "5",
+				"TEMPLATE_THEME" => "blue",
+				"ADD_PICT_PROP" => "-",
+				"LABEL_PROP" => "-",
+				"MESS_BTN_BUY" => "Купить",
+				"MESS_BTN_ADD_TO_BASKET" => "В корзину",
+				"MESS_BTN_SUBSCRIBE" => "Подписаться",
+				"MESS_BTN_DETAIL" => "Подробнее",
+				"MESS_NOT_AVAILABLE" => "Нет в наличии",
+				"SECTION_URL" => "",
+				"DETAIL_URL" => "",
+				"SECTION_ID_VARIABLE" => "SECTION_ID",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "N",
+				"AJAX_OPTION_HISTORY" => "N",
+				"CACHE_TYPE" => "A",
+				"CACHE_TIME" => "36000000",
+				"CACHE_GROUPS" => "Y",
+				"SET_META_KEYWORDS" => "N",
+				"META_KEYWORDS" => "-",
+				"SET_META_DESCRIPTION" => "N",
+				"META_DESCRIPTION" => "-",
+				"BROWSER_TITLE" => "-",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"DISPLAY_COMPARE" => "N",
+				"SET_TITLE" => "N",
+				"SET_STATUS_404" => "N",
+				"CACHE_FILTER" => "N",
+				"PRICE_CODE" => array(),
+				"USE_PRICE_COUNT" => "N",
+				"SHOW_PRICE_COUNT" => "1",
+				"PRICE_VAT_INCLUDE" => "N",
+				"BASKET_URL" => "/personal/basket.php",
+				"ACTION_VARIABLE" => "action",
+				"PRODUCT_ID_VARIABLE" => "id",
+				"USE_PRODUCT_QUANTITY" => "N",
+				"ADD_PROPERTIES_TO_BASKET" => "N",
+				"PAGER_TEMPLATE" => ".default",
+				"DISPLAY_TOP_PAGER" => "N",
+				"DISPLAY_BOTTOM_PAGER" => "N",
+				"PAGER_TITLE" => "Товары",
+				"PAGER_SHOW_ALWAYS" => "N",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "N",
+				"AJAX_OPTION_ADDITIONAL" => "",
+				"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+				"PRODUCT_PROPS_VARIABLE" => "prop",
+				"PARTIAL_PRODUCT_PROPERTIES" => "N",
+				"PRODUCT_PROPERTIES" => array()
+			),
+			array('HIDE_ICONS' => 'Y'),
+			false
+		);?>
 		
 		<!-- ==============================================
 		CALL TO ACTION (IPHONES)
@@ -216,16 +289,23 @@
 			array('HIDE_ICONS' => 'Y'),
 			false
 		);?>
-
+		
+		<!-- ==============================================
+		FEATURED PROJECTS
+		=============================================== -->
+		
 		<?$APPLICATION->IncludeComponent(
 			"bitrix:catalog.section",
-			"features",
-			Array(
+			"project",
+			array(
 				"IBLOCK_TYPE" => "catalog",
-				"IBLOCK_ID" => "2",
+				"IBLOCK_ID" => "5",
 				"SECTION_ID" => "",
 				"SECTION_CODE" => "",
-				"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+				"SECTION_USER_FIELDS" => array(
+					0 => "",
+					1 => "",
+				),
 				"ELEMENT_SORT_FIELD" => "sort",
 				"ELEMENT_SORT_ORDER" => "asc",
 				"ELEMENT_SORT_FIELD2" => "id",
@@ -233,9 +313,17 @@
 				"FILTER_NAME" => "arrFilter",
 				"INCLUDE_SUBSECTIONS" => "A",
 				"SHOW_ALL_WO_SECTION" => "Y",
-				"PAGE_ELEMENT_COUNT" => "6",
-				"LINE_ELEMENT_COUNT" => "3",
-				"PROPERTY_CODE" => array(0=>"ICON_1",1=>"ICON_2",2=>"",),
+				"PAGE_ELEMENT_COUNT" => "10",
+				"LINE_ELEMENT_COUNT" => "1",
+				"PROPERTY_CODE" => array(
+					0 => "",
+					1 => "",
+					2 => "",
+					3 => "",
+					4 => "PROP4",
+					5 => "PROP5",
+					6 => "",
+				),
 				"OFFERS_LIMIT" => "5",
 				"TEMPLATE_THEME" => "blue",
 				"ADD_PICT_PROP" => "-",
@@ -265,7 +353,7 @@
 				"SET_TITLE" => "N",
 				"SET_STATUS_404" => "N",
 				"CACHE_FILTER" => "N",
-				"PRICE_CODE" => array(),
+				"PRICE_CODE" => "",
 				"USE_PRICE_COUNT" => "N",
 				"SHOW_PRICE_COUNT" => "1",
 				"PRICE_VAT_INCLUDE" => "N",
@@ -286,102 +374,18 @@
 				"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 				"PRODUCT_PROPS_VARIABLE" => "prop",
 				"PARTIAL_PRODUCT_PROPERTIES" => "N",
-				"PRODUCT_PROPERTIES" => array()
+				"PRODUCT_PROPERTIES" => ""
 			),
-			array('HIDE_ICONS' => 'Y'),
-			false
+			false,
+			array(
+				"ACTIVE_COMPONENT" => "N"
+			)
 		);?>
 		
-		<!-- ==============================================
-		FEATURED PROJECTS
-		=============================================== -->
-		
-		<?$APPLICATION->IncludeComponent("bitrix:catalog.section", "project", array(
-	"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => "5",
-		"SECTION_ID" => "",
-		"SECTION_CODE" => "",
-		"SECTION_USER_FIELDS" => array(
-			0 => "",
-			1 => "",
-		),
-		"ELEMENT_SORT_FIELD" => "sort",
-		"ELEMENT_SORT_ORDER" => "asc",
-		"ELEMENT_SORT_FIELD2" => "id",
-		"ELEMENT_SORT_ORDER2" => "desc",
-		"FILTER_NAME" => "arrFilter",
-		"INCLUDE_SUBSECTIONS" => "A",
-		"SHOW_ALL_WO_SECTION" => "Y",
-		"PAGE_ELEMENT_COUNT" => "10",
-		"LINE_ELEMENT_COUNT" => "1",
-		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-			2 => "",
-			3 => "",
-			4 => "PROP4",
-			5 => "PROP5",
-			6 => "",
-		),
-		"OFFERS_LIMIT" => "5",
-		"TEMPLATE_THEME" => "blue",
-		"ADD_PICT_PROP" => "-",
-		"LABEL_PROP" => "-",
-		"MESS_BTN_BUY" => "Купить",
-		"MESS_BTN_ADD_TO_BASKET" => "В корзину",
-		"MESS_BTN_SUBSCRIBE" => "Подписаться",
-		"MESS_BTN_DETAIL" => "Подробнее",
-		"MESS_NOT_AVAILABLE" => "Нет в наличии",
-		"SECTION_URL" => "",
-		"DETAIL_URL" => "",
-		"SECTION_ID_VARIABLE" => "SECTION_ID",
-		"AJAX_MODE" => "N",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "N",
-		"AJAX_OPTION_HISTORY" => "N",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "36000000",
-		"CACHE_GROUPS" => "Y",
-		"SET_META_KEYWORDS" => "N",
-		"META_KEYWORDS" => "-",
-		"SET_META_DESCRIPTION" => "N",
-		"META_DESCRIPTION" => "-",
-		"BROWSER_TITLE" => "-",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"DISPLAY_COMPARE" => "N",
-		"SET_TITLE" => "N",
-		"SET_STATUS_404" => "N",
-		"CACHE_FILTER" => "N",
-		"PRICE_CODE" => "",
-		"USE_PRICE_COUNT" => "N",
-		"SHOW_PRICE_COUNT" => "1",
-		"PRICE_VAT_INCLUDE" => "N",
-		"BASKET_URL" => "/personal/basket.php",
-		"ACTION_VARIABLE" => "action",
-		"PRODUCT_ID_VARIABLE" => "id",
-		"USE_PRODUCT_QUANTITY" => "N",
-		"ADD_PROPERTIES_TO_BASKET" => "N",
-		"PAGER_TEMPLATE" => ".default",
-		"DISPLAY_TOP_PAGER" => "N",
-		"DISPLAY_BOTTOM_PAGER" => "N",
-		"PAGER_TITLE" => "Товары",
-		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-		"PRODUCT_PROPS_VARIABLE" => "prop",
-		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => ""
-	),
-	false,
-	array(
-	"ACTIVE_COMPONENT" => "N"
-	)
-);?>
-		
-		<?$APPLICATION->IncludeComponent("bitrix:catalog.section", "team", array(
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:catalog.section",
+			"team",
+			array(
 				"IBLOCK_TYPE" => "catalog",
 				"IBLOCK_ID" => "4",
 				"SECTION_ID" => "",
@@ -474,96 +478,96 @@
 		=============================================== -->
 		
 		<?$APPLICATION->IncludeComponent(
-			"bitrix:catalog.section",
-			"portfolio",
-			array(
-				"IBLOCK_TYPE" => "catalog",
-				"IBLOCK_ID" => "5",
-				"SECTION_ID" => "",
-				"SECTION_CODE" => "",
-				"SECTION_USER_FIELDS" => array(
-					0 => "",
-					1 => "",
-				),
-				"ELEMENT_SORT_FIELD" => "sort",
-				"ELEMENT_SORT_ORDER" => "desc",
-				"FILTER_NAME" => "arrFilter",
-				"INCLUDE_SUBSECTIONS" => "A",
-				"SHOW_ALL_WO_SECTION" => "Y",
-				"PAGE_ELEMENT_COUNT" => "6",
-				"LINE_ELEMENT_COUNT" => "1",
-				"PROPERTY_CODE" => array(
-					0 => "LINK_WEBSITE",
-					1 => "",
-				),
-				"OFFERS_LIMIT" => "5",
-				"TEMPLATE_THEME" => "blue",
-				"ADD_PICT_PROP" => "-",
-				"LABEL_PROP" => "-",
-				"MESS_BTN_BUY" => "Купить",
-				"MESS_BTN_ADD_TO_BASKET" => "В корзину",
-				"MESS_BTN_SUBSCRIBE" => "Подписаться",
-				"MESS_BTN_DETAIL" => "Подробнее",
-				"MESS_NOT_AVAILABLE" => "Нет в наличии",
-				"SECTION_URL" => "",
-				"DETAIL_URL" => "",
-				"SECTION_ID_VARIABLE" => "SECTION_ID",
-				"AJAX_MODE" => "N",
-				"AJAX_OPTION_JUMP" => "N",
-				"AJAX_OPTION_STYLE" => "N",
-				"AJAX_OPTION_HISTORY" => "N",
-				"CACHE_TYPE" => "A",
-				"CACHE_TIME" => "36000000",
-				"CACHE_GROUPS" => "Y",
-				"SET_META_KEYWORDS" => "N",
-				"META_KEYWORDS" => "-",
-				"SET_META_DESCRIPTION" => "N",
-				"META_DESCRIPTION" => "-",
-				"BROWSER_TITLE" => "-",
-				"ADD_SECTIONS_CHAIN" => "N",
-				"DISPLAY_COMPARE" => "N",
-				"SET_TITLE" => "N",
-				"SET_STATUS_404" => "N",
-				"CACHE_FILTER" => "N",
-				"PRICE_CODE" => array(
-				),
-				"USE_PRICE_COUNT" => "N",
-				"SHOW_PRICE_COUNT" => "1",
-				"PRICE_VAT_INCLUDE" => "N",
-				"BASKET_URL" => "/personal/basket.php",
-				"ACTION_VARIABLE" => "action",
-				"PRODUCT_ID_VARIABLE" => "id",
-				"USE_PRODUCT_QUANTITY" => "N",
-				"ADD_PROPERTIES_TO_BASKET" => "N",
-				"PAGER_TEMPLATE" => ".default",
-				"DISPLAY_TOP_PAGER" => "N",
-				"DISPLAY_BOTTOM_PAGER" => "N",
-				"PAGER_TITLE" => "Товары",
-				"PAGER_SHOW_ALWAYS" => "N",
-				"PAGER_DESC_NUMBERING" => "N",
-				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-				"PAGER_SHOW_ALL" => "N",
-				"AJAX_OPTION_ADDITIONAL" => "",
-				"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-				"PRODUCT_PROPS_VARIABLE" => "prop",
-				"PARTIAL_PRODUCT_PROPERTIES" => "N",
-				"PRODUCT_PROPERTIES" => array(
-				),
-				"COMPONENT_TEMPLATE" => "portfolio",
-				"ELEMENT_SORT_FIELD2" => "",
-				"ELEMENT_SORT_ORDER2" => "",
-				"BACKGROUND_IMAGE" => "-",
-				"SEF_MODE" => "N",
-				"SET_BROWSER_TITLE" => "Y",
-				"SET_LAST_MODIFIED" => "N",
-				"USE_MAIN_ELEMENT_SECTION" => "N",
-				"PAGER_BASE_LINK_ENABLE" => "N",
-				"SHOW_404" => "N",
-				"MESSAGE_404" => "",
-				"DISABLE_INIT_JS_IN_COMPONENT" => "N"
-			),
-			false
-		);?>
+	"bitrix:catalog.section", 
+	"portfolio", 
+	array(
+		"IBLOCK_TYPE" => "catalog",
+		"IBLOCK_ID" => "5",
+		"SECTION_ID" => "",
+		"SECTION_CODE" => "",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_ORDER" => "desc",
+		"FILTER_NAME" => "arrFilter",
+		"INCLUDE_SUBSECTIONS" => "A",
+		"SHOW_ALL_WO_SECTION" => "Y",
+		"PAGE_ELEMENT_COUNT" => "6",
+		"LINE_ELEMENT_COUNT" => "1",
+		"PROPERTY_CODE" => array(
+			0 => "LINK_WEBSITE",
+			1 => "",
+		),
+		"OFFERS_LIMIT" => "5",
+		"TEMPLATE_THEME" => "blue",
+		"ADD_PICT_PROP" => "-",
+		"LABEL_PROP" => "-",
+		"MESS_BTN_BUY" => "Купить",
+		"MESS_BTN_ADD_TO_BASKET" => "В корзину",
+		"MESS_BTN_SUBSCRIBE" => "Подписаться",
+		"MESS_BTN_DETAIL" => "Подробнее",
+		"MESS_NOT_AVAILABLE" => "Нет в наличии",
+		"SECTION_URL" => "",
+		"DETAIL_URL" => "",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "N",
+		"AJAX_OPTION_HISTORY" => "N",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_GROUPS" => "Y",
+		"SET_META_KEYWORDS" => "N",
+		"META_KEYWORDS" => "-",
+		"SET_META_DESCRIPTION" => "N",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"DISPLAY_COMPARE" => "N",
+		"SET_TITLE" => "N",
+		"SET_STATUS_404" => "N",
+		"CACHE_FILTER" => "N",
+		"PRICE_CODE" => array(
+		),
+		"USE_PRICE_COUNT" => "N",
+		"SHOW_PRICE_COUNT" => "1",
+		"PRICE_VAT_INCLUDE" => "N",
+		"BASKET_URL" => "/personal/basket.php",
+		"ACTION_VARIABLE" => "action",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"USE_PRODUCT_QUANTITY" => "N",
+		"ADD_PROPERTIES_TO_BASKET" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "Товары",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N",
+		"PRODUCT_PROPERTIES" => array(
+		),
+		"COMPONENT_TEMPLATE" => "portfolio",
+		"ELEMENT_SORT_FIELD2" => "id",
+		"ELEMENT_SORT_ORDER2" => "desc",
+		"BACKGROUND_IMAGE" => "-",
+		"SEF_MODE" => "N",
+		"SET_BROWSER_TITLE" => "Y",
+		"SET_LAST_MODIFIED" => "N",
+		"USE_MAIN_ELEMENT_SECTION" => "N",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"SHOW_404" => "N",
+		"MESSAGE_404" => "",
+		"DISABLE_INIT_JS_IN_COMPONENT" => "N"
+	),
+	false
+);?>
 		
 		<!-- ==============================================
 		RESPONSIVE VIDEO
@@ -608,6 +612,12 @@
 				2 => "PROP3",
 				3 => "PROP4",
 				4 => "PROP5",
+				5 => "",
+				6 => "",
+				7 => "",
+				8 => "",
+				9 => "",
+				10 => "",
 			),
 			"OFFERS_LIMIT" => "5",
 			"TEMPLATE_THEME" => "blue",
@@ -674,14 +684,14 @@
 		<?$APPLICATION->IncludeComponent(
 			"bitrix:main.include",
 			"",
-			array(
+			Array(
 				"AREA_FILE_SHOW" => "file",
 				"PATH" => SITE_DIR."include/area-footer.php",
 				"EDIT_TEMPLATE" => ""
 			),
 			false,
 			array(
-				"ACTIVE_COMPONENT" => "N"
+			    'ACTIVE_COMPONENT' => 'N'
 			)
 		);?>
 		
@@ -768,7 +778,7 @@
 			),
 			false,
 			array(
-			"ACTIVE_COMPONENT" => "N"
+				"ACTIVE_COMPONENT" => "N"
 			)
 		);?>
 		<?

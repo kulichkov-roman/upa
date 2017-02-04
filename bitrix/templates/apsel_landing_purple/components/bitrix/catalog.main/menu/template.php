@@ -19,8 +19,9 @@ if (!empty($arResult['ITEMS']))
 			}
 		}
 		?>
-		<li><a class="scrollto" href="#contact">Реквизиты</a></li>
-		<li><a class="scrollto" href="#contact"><? echo GetMessage('CONTACT')?></a></li>
+		<li>
+			<a class="scrollto _contacts" href="#contact">Тел. +7 (383) 331-15-24</a>
+		</li>
 	</ul>
 </div><?
 }

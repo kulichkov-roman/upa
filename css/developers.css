@@ -21,3 +21,24 @@
 .section-description {
 	line-height: inherit;
 }
+
+#main-nav .nav a._contacts,
+#main-nav .nav a._contacts:active,
+#main-nav .nav a._contacts:hover{
+	font-family: Arial, sans-serif;
+	padding:0px 5px;
+	font-size:14px;
+	line-height:54px;
+	font-weight:700;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+	background:transparent;
+	color:#4E5961;
+	opacity:0.5;
+	-webkit-transition:opacity 0.2s ease-out;
+	transition:opacity 0.2s ease-out;
+}
+
+.features .icon {
+	background: #9661A8 !important;
+}
