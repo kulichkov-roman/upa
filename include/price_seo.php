@@ -1,5 +1,5 @@
 <p class="section-description __price-seo">На контекстную рекламу и SEO продвижение<br>
-    в нашей компании</p>
+    в нашей компании</p> 
 <div class="row pricing">
     <div class="col-lg-10 col-lg-offset-1">
         <div class="col-sm-4 text-center">
