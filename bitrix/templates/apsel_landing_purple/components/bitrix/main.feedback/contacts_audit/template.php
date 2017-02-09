@@ -50,7 +50,7 @@ CONTACT
                 Настраиваем Контекстную рекламу! <br><br>
                 <strong>И Вы начинаете получать новых клиентов и доход!</strong>
             </p>
-			<h1 class="section-title">Оставьте заявку</h1>
+			<h3 class="section-title _offer">Оставьте заявку</h3>
 			<?
 		}
 		?>

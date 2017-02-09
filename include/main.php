@@ -286,7 +286,7 @@
 			"PRODUCT_PROPERTIES" => array(
 			)
 			),
-			array('HIDE_ICONS' => 'Y'),
+			array('HIDE_ICONS' => 'N'),
 			false
 		);?>
 		

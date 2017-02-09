@@ -27,14 +27,14 @@
 #main-nav .nav a._contacts:hover{
 	font-family: Arial, sans-serif;
 	padding:0px 5px;
-	font-size:14px;
+	font-size:16px;
 	line-height:54px;
 	font-weight:700;
 	letter-spacing:0.01em;
 	text-transform:uppercase;
 	background:transparent;
-	color:#4E5961;
-	opacity:0.5;
+	color:#000;
+	opacity: 0.75 !important;
 	-webkit-transition:opacity 0.2s ease-out;
 	transition:opacity 0.2s ease-out;
 }
@@ -44,5 +44,17 @@
 }
 
 ._offer {
-	font-size: 24px !important;
+	font-size: 26px !important;
+	color: #000;
+	opacity: 0.70;
+}
+p._service {
+	font-size: 23px !important;
+    color: #000;
+    font-weight: 600;
+}
+
+.services h3
+{
+    line-height: 25px;
 }
